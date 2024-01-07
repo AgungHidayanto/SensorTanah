@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <title>sensor</title>
+
+    </style>
+</head>
+
+<body class="font-pop">
+    <nav>
+        <div>
+            <div class="flex justify-between items-center  px-4 py-6">
+                <h1 class="text-blue-800 font-bold">Soil Moisture Sensor</h1>
+                <ul class=" flex gap-3">
+                    <li>Home</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class=" px-4 mt-12 ">
+        <div class="flex flex-col justify-center items-center relative">
+            <div
+                class="w-52 bg-white rounded-lg drop-shadow-md h-40 flex items-center justify-center flex-col items-center gap-y-5 ">
+                <img src="images/land-mine-on-solid.svg" alt="" srcset="" class="absolute right-1 top-1">
+                <h2 class="text-blue-800 font-bold text-2xl ">Humidity</h2>
+                <p class="value after:content-['RH'] after:ml-3 font-semibold" id="kelembapan_tanah">0</p>
+            </div>
+        </div>
+        <div class=" bg-white rounded-lg drop-shadow-md h-auto px-4 mt-4 py-4 relative">
+            <img src="images/circle-info-solid.svg" alt="" srcset="" class="absolute right-1 top-1">
+            <h2 class="font-semibold text-base pb-3">Information</h2>
+            <div class="flex justify-around">
+                <p class="text-sm ">
+                    < 60 <br>
+                        60 - 80 <br>
+                        > 80
+                </p>
+                <p class="text-sm">
+                    KERING <br>
+                    PAS <br>
+                    BASAH
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script type="module" src="sensor.js">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
+    </script>
+
+</body>
+
+</html>
