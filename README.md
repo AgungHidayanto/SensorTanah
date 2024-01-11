@@ -11,7 +11,7 @@ App Soil is a website-based application that is used to detect whether the humid
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
+App uses a number of open source projects to work properly:
 
 - [HTML] - Standard markup language used to create the structure and content of web pages.
 - [CSS] - Styling language used to control the visual appearance of your web - pages.
